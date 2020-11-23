@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+
+<body class="container">
+    <div class="row">
+        <div class="col-12 align-self-center">
+            <div class="row justify-content-center">
+                <img style="width: 50%;" src="img/icon/logo.png" alt="Logo">
+            </div>
+        </div>
+    </div>
+    <p id="login" class="h1 text-center">Sign up</p>
+
+    <div class="row justify-content-center mt-4">
+        <form class="col-12 mb-3" >
+            <div class="form-group">
+                <input type="email" class="form-control border py-4" id="email_field" aria-describedby="emailHelp"
+                    placeholder="Email" autocomplete="email" >
+            </div>
+            <div class="form-group pt-2">
+                <input type="password" class="form-control border py-4" id="password_field" autocomplete="new-password" placeholder="Password">
+            </div>
+            <div class="form-group pt-2">
+                <input type="password" class="form-control border py-4" id="confirm_password_field" autocomplete="new-password" placeholder="Confirm Password">
+            </div>
+        </form>
+        <button type="submit" onclick="handleSignUp()" class="button btn btn-block text-center mx-2 mb-5"><p class="my-1">SIGN UP</p></button>
+        <p class="my-3">Already have an account?<a onclick="goLogin()" class="m-2">LOGIN</a></p>
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase.js"></script>
+    <script type="text/javascript" src="firebase/firebaseConfig.js"></script>
+    <script type="text/javascript" src="js/SignUp.js"></script>
+
+
+</body>
+
+</html>

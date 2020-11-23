@@ -1,0 +1,17 @@
+body{
+    background:#ffe9e9;
+}
+
+.button{
+    background: #f46169;
+    color: #ffffff;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.border{
+    border-radius: 45px;
+    border: 1px solid #ffffff;
+    box-shadow: 1px 1px 4px 0px rgba(66, 83, 159, 0.35), inset 1px 2px 4px 0px rgba(66, 83, 159, 0);
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body class="container-fluid">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <div id="header" class="fixed-top shadow-lg  bg-white rounded ">
+        <div class="row m-0">
+            <div class="col-2 row m-0">
+                <div class="align-self-center">
+                    <i onclick="goBack()" class="fa fa-chevron-left " style="font-size:20px"></i>
+                </div>
+            </div>
+            <div class="col-8 text-center">
+                <img src="./img//icon/logo.png" alt="" width="50" height="50" class="ml-4">
+            </div>
+            <div class="col-2 row m-0">
+                <div class="align-self-center">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/mila-ff1b4.appspot.com/o/images%2Fuser%2Favatars%2F19025117_357590297977621_6041579481536350082_o.jpg?alt=media&token=b0e0fd77-144e-461d-bb8e-f949edb2ee0a"
+                        alt="" width="30" height="30" class="fa fa-search rounded-circle  ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" style="margin-top: 15%;"></div>
+    <div class="row justify-content-center my-2">
+        <button onclick="goToAddFeedback()" type="button" class="btn btn-outline-primary">Add feedback for the
+            restaurant</button>
+    </div>
+    <div style="width: 100%; height: 2px;" class="shadow-lg bg-secondary"></div>
+    <div id="feedback" class="mt-3"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase.js"></script>
+    <script type="text/javascript" src="firebase/firebaseConfig.js"></script>
+    <script type="text/javascript" src="js/DetailRestaurant.js"></script>
+    <script type="text/javascript" src="js/navigator.js"></script>
+</body>
+<footer class="fixed-bottom  text-center bg-white">
+    <div class="row pt-1 justify-content-center">
+        <div class="col-3 align-self-center text-secondary" onclick="goToFeedback()">
+            <i class="fa fa-pencil" style="font-size:25px"></i>
+            <p class="m-0" style="font-size: xx-small; font-weight: bold;">Feedback</p>
+        </div>
+        <div class="col-3 align-self-center text-danger" onclick="goToHome()">
+            <i class="fa fa-home " style="font-size:35px"></i>
+            <p class="m-0" style="font-size: x-small; font-weight: bold;">Home</p>
+        </div>
+        <div class="col-3 align-self-center text-secondary" onclick="goToProfile()">
+            <i class="fa fa-user-o" style="font-size:25px"></i>
+            <p class="m-0" style="font-size: xx-small; font-weight: bold;">Profile</p>
+        </div>
+    </div>
+</footer>
+
+</html>
